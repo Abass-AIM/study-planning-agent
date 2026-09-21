@@ -13,13 +13,18 @@ The project is developed incrementally. Each laboratory adds software engineerin
 ## Current Repository Structure 
  
 ```text 
-study-planning-agent/ 
-|-- README.md 
-|-- lab_agent.py 
-|-- agent_memory.json 
-|-- agent_output.txt 
-`-- notes/ 
-    `-- week1.md 
+study-planning-agent/
+|-- README.md
+|-- lab_agent.py
+|-- agent_memory.json
+|-- agent_output.txt
+|-- notes/
+|   `-- week1.md
+`-- docs/
+    |-- stakeholders.md
+    |-- requirements.md
+    |-- user-stories.md
+    `-- use-cases.md
 ``` 
  
 ## Week 1 - Git Collaboration and AI Agent Fundamentals 
@@ -73,6 +78,14 @@ main
   -> git pull 
 ``` 
  
+
+## Week 2 - Requirements Engineering
+
+Week 2 adds stakeholder analysis, functional and non-functional requirements, AI-agent boundaries, user stories, acceptance criteria, traceability, and a Mermaid use-case-style model. The artefacts are stored in `docs/`.
+
+## Application Status
+
+The executable `lab_agent.py` application is unchanged from Week 1. Week 2 changes the specification and project documentation, not the implementation.
 Do not begin a new laboratory from an old task branch. 
  
 ## Current Project Status 
