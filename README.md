@@ -110,9 +110,14 @@ GAINBAN-SZOFMEIN-1
 
 Week 3 adds structural models and a small Python domain-model application. Mermaid sources are stored in `docs/models/`, and `app.py` implements the same Student, Assignment, StudyPlan, and PlanItem concepts shown in the diagrams.
 
+## Week 4 Behavioral Modeling
+Week 4 adds an executable planning workflow and three behavioral views of the same use case: an activity-style flowchart, a native Mermaid state machine, and a native Mermaid sequence diagram. The sequence model includes an AI-agent-style component calling a calendar tool and handling both success and failure.
+
 ## Current Project Status
 
-- Week 1: completed – Git workflow and introductory agent simulator
-- Week 2: completed – requirements engineering and use-case modeling
-- Week 3: completed – structural modeling and Python domain model
-- Week 4: next – activity, state machine, sequence diagrams, and executable behavior
+## Current Project Status 
+- Week 1: completed - Git workflow and introductory agent simulator 
+- Week 2: completed - requirements engineering and use-case modeling 
+- Week 3: completed - structural modeling and Python domain model 
+- Week 4: completed - behavioral modeling and executable agent/tool workflow 
+- Week 5: next - architecture, interfaces, coupling/cohesion, and agent architecture
