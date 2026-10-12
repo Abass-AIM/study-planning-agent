@@ -1,0 +1,13 @@
+[
+  "State: Observing",
+  "State: CallingCalendarTool",
+  "Tool result: calendar availability received",
+  "State: Planning",
+  "Generated study plan",
+  "State: Completed",
+  "State: Observing",
+  "State: WaitingForInput",
+  "State: Observing",
+  "State: CallingCalendarTool",
+  "State: Failed"
+]
