@@ -200,7 +200,6 @@ Week 3 adds structural models and a small Python domain-model application. Merma
 ## Week 4 Behavioral Modeling
 Week 4 adds an executable planning workflow and three behavioral views of the same use case: an activity-style flowchart, a native Mermaid state machine, and a native Mermaid sequence diagram. The sequence model includes an AI-agent-style component calling a calendar tool and handling both success and failure.
 
-## Current Project Status
 
 ## Current Project Status 
 - Week 1: completed - Git workflow and introductory agent simulator 
