@@ -200,6 +200,15 @@ Week 3 adds structural models and a small Python domain-model application. Merma
 ## Week 4 Behavioral Modeling
 Week 4 adds an executable planning workflow and three behavioral views of the same use case: an activity-style flowchart, a native Mermaid state machine, and a native Mermaid sequence diagram. The sequence model includes an AI-agent-style component calling a calendar tool and handling both success and failure.
 
+## Week 5 - Software Architecture
+Week 5 refactors the behavioral prototype into a small modular architecture. The project separates domain concepts,
+orchestration, planning, external ports, and concrete adapters. Mermaid diagrams document the decomposition and dependency
+direction.
+
+## Week 6 - Data Modeling and Persistence 
+
+Week 6 maps the Study Planning Agent domain model to a normalized relational schema and adds an executable SQLite persistence adapter. Students, assignments, plans and plan items are stored as business data. Planning-request state, memory events and calendar tool calls demonstrate persistence for agent workflows. 
+
 
 ## Current Project Status 
 - Week 1: completed - Git workflow and introductory agent simulator 
@@ -210,6 +219,8 @@ Week 4 adds an executable planning workflow and three behavioral views of the sa
 
 - Week 4: completed - behavioral models and executable agent workflow 
 
-- Week 5: completed - architectural decomposition, interfaces, coupling/cohesion, and agent architecture 
+- Week 5: completed - architectural decomposition and interfaces 
 
-- Week 6: next - conceptual data model, relational design, normalization, and persistence 
+- Week 6: completed - conceptual data model, relational design, normalization and SQLite persistence 
+
+- Week 7: next - coding standards, code review, branching and traceability 
