@@ -209,6 +209,16 @@ direction.
 
 Week 6 maps the Study Planning Agent domain model to a normalized relational schema and adds an executable SQLite persistence adapter. Students, assignments, plans and plan items are stored as business data. Planning-request state, memory events and calendar tool calls demonstrate persistence for agent workflows. 
 
+## Week 8 Scrum Planning and Project Governance
+- Planning artifacts: `docs/project-management/README.md` (index plus eight detailed Markdown files)[cite: 125].
+- Scope: Scrum planning and simulated iteration; no new production Python feature in Week 8[cite: 125].
+- Sprint Goal: improve transparency, missing-deadline handling, and shareability[cite: 125].
+- Selected: PB-01 (5 SP), PB-02 (3 SP), PB-03 (5 SP); 13 SP capacity[cite: 125].
+- Final simulated board: 6 Done, 1 In Review, 1 In Progress; PB-03 is unfinished.
+- Existing SQLite application remains the working technical baseline.
+- **Week 8:** completed Scrum sprint planning, Product Backlog, Sprint Board, simulated Daily Scrum, Sprint Review, Retrospective, and XP/TDD overview.
+- **Week 9:** next SOLID principles, design patterns and agent tool abstractions[cite: 126].
+
 
 ## Current Project Status 
 - Week 1: completed - Git workflow and introductory agent simulator 
