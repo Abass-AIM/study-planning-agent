@@ -217,7 +217,12 @@ Week 6 maps the Study Planning Agent domain model to a normalized relational sch
 - Final simulated board: 6 Done, 1 In Review, 1 In Progress; PB-03 is unfinished.
 - Existing SQLite application remains the working technical baseline.
 - **Week 8:** completed Scrum sprint planning, Product Backlog, Sprint Board, simulated Daily Scrum, Sprint Review, Retrospective, and XP/TDD overview.
-- **Week 9:** next SOLID principles, design patterns and agent tool abstractions[cite: 126].
+
+
+## Week 9 SOLID Refactoring and Design Patterns
+Week 9 refactors calendar-provider construction into `factories/calendar_factory.py` and adds tool-call logging through `adapters/logging_calendar.py`. `run.py` selects the configured provider, wraps it with `LoggingCalendarDecorator`, and injects the resulting `CalendarPort` into the existing orchestrator. The domain model, agent goal, and SQLite schema remain unchanged[cite: 81].
+
+Documentation and engineering evidence: [docs/design-patterns/README.md](docs/design-patterns/README.md)[cite: 81].
 
 
 ## Current Project Status 
