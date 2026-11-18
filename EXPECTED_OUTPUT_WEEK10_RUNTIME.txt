@@ -1,0 +1,14 @@
+DATABASE -> schema ready at study_planning_agent.db
+FACTORY -> created FakeCalendarAdapter
+REQUEST -> 1 created for Alex Student
+STATE -> Observing
+STATE -> CallingCalendarTool
+DECORATOR -> calendar call started
+FakeCalendarAdapter: get_availability() called
+DECORATOR -> calendar call finished with 2 slots
+STATE -> Planning
+DATABASE -> study plan 1 saved
+STATE -> Completed
+RESULT -> Study plan generated
+PLAN -> Monday 14:00-16:00: Unit and Integration Testing (2.0 h)
+PLAN -> Tuesday 10:00-12:00: AI Agent Evaluation (1.5 h)
