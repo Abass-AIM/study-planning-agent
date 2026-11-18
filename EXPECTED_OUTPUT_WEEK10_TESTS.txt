@@ -1,0 +1,11 @@
+test_given_calendar_outage_when_plan_requested_then_failure_is_controlled ... ok
+test_given_no_assignments_when_plan_requested_then_agent_waits_for_input ... ok
+test_given_valid_assignment_when_plan_requested_then_plan_completes ... ok
+test_decorator_preserves_calendar_failure ... ok
+test_factory_and_decorator_return_calendar_slots ... ok
+test_caps_long_assignment_at_two_hours ... ok
+test_preserves_short_assignment_estimate ... ok
+test_rejects_negative_estimated_hours ... ok
+test_successful_plan_is_generated_and_persisted ... ok
+Ran 9 tests in 0.136s
+OK

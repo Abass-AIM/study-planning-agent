@@ -1,7 +1,7 @@
 # Study Planning Agent 
  
-**Course:** Software Engineering and AI Agent Fundamentals   
-**Course code:** GAINBAN-SZOFMEIN-1   
+**Course:** Software Engineering and AI Agent Fundamentals 
+**Course code:** GAINBAN-SZOFMEIN-1 
 **Project type:** Semester laboratory project 
  
 ## About This Repository 
@@ -10,232 +10,272 @@ This repository contains the semester project and laboratory artefacts for the S
  
 The project is developed incrementally. Each laboratory adds software engineering documentation, models, source code, tests, or AI-agent-related components. 
  
-## Current Repository Structure 
-
  
-
+## Current Repository Structure 
+ 
 ```text 
-
 study-planning-agent/ 
 
-|-- README.md 
+├── adapters/ 
 
-|-- .gitignore 
+│   ├── __init__.py 
 
-|-- __init__.py 
+│   ├── fake_calendar.py 
 
-|-- app.py 
+│   ├── logging_calendar.py 
 
-|-- lab_agent.py 
+│   ├── sqlite_database.py 
 
-|-- run.py 
+│   ├── sqlite_memory.py 
 
-|-- agent_memory.json 
+│   └── sqlite_repository.py 
 
-|-- agent_output.txt 
+├── agent/ 
 
-| 
+│   ├── __init__.py 
 
-|-- domain/ 
+│   ├── orchestrator.py 
 
-|   |-- __init__.py 
+│   ├── planner.py 
 
-|   `-- models.py 
+│   ├── planning_policy.py 
 
-| 
+│   └── states.py 
 
-|-- ports/ 
+├── db/ 
 
-|   |-- __init__.py 
+│   └── schema.sql 
 
-|   |-- calendar_port.py 
+├── docs/ 
 
-|   `-- memory_store.py 
+│   ├── architecture/ 
 
-| 
+│   │   ├── agent-architecture.md 
 
-|-- adapters/ 
+│   │   ├── architecture-decisions.md 
 
-|   |-- __init__.py 
+│   │   ├── interfaces.md 
 
-|   |-- fake_calendar.py 
+│   │   ├── README.md 
 
-|   `-- json_memory.py 
+│   │   └── system-architecture.md 
 
-| 
+│   ├── behavior/ 
 
-|-- agent/ 
+│   │   ├── activity-diagram.md 
 
-|   |-- __init__.py 
+│   │   ├── README.md 
 
-|   |-- states.py 
+│   │   ├── sequence-diagram.md 
 
-|   |-- planner.py 
+│   │   └── state-machine-diagram.md 
 
-|   `-- orchestrator.py 
+│   ├── data-model/ 
 
-| 
+│   │   ├── conceptual-model.md 
 
-|-- notes/ 
+│   │   ├── mapping.md 
 
-|   `-- week1.md 
+│   │   ├── normalization.md 
 
-| 
+│   │   ├── queries.md 
 
-`-- docs/ 
+│   │   ├── README.md 
 
-    |-- stakeholders.md 
+│   │   └── relational-schema.md 
 
-    |-- requirements.md 
+│   ├── design-patterns/ 
 
-    |-- user-stories.md 
+│   │   ├── code-review-checklist.md 
 
-    |-- use-cases.md 
+│   │   ├── patterns.md 
 
-    | 
+│   │   ├── README.md 
 
-    |-- models/ 
+│   │   ├── solid-review.md 
 
-    |   |-- README.md 
+│   │   └── traceability.md 
 
-    |   |-- use-case-diagram.md 
+│   ├── models/ 
 
-    |   |-- class-diagram.md 
+│   │   ├── class-diagram.md 
 
-    |   |-- object-diagram.md 
+│   │   ├── database-diagram.md 
 
-    |   |-- database-diagram.md 
+│   │   ├── object-diagram.md 
 
-    |   `-- package-diagram.md 
+│   │   ├── package-diagram.md 
 
-    | 
+│   │   ├── README.md 
 
-    `-- behavior/ 
+│   │   └── use-case-diagram.md 
 
-        |-- README.md 
+│   ├── project-management/ 
 
-        |-- activity-diagram.md 
+│   │   ├── daily-scrum-log.md 
 
-        |-- state-machine-diagram.md 
+│   │   ├── definition-of-done.md 
 
-        `-- sequence-diagram.md 
+│   │   ├── product-backlog.md 
 
+│   │   ├── README.md 
+
+│   │   ├── retrospective.md 
+
+│   │   ├── sprint-board.md 
+
+│   │   ├── sprint-plan.md 
+
+│   │   ├── sprint-review.md 
+
+│   │   └── xp-tdd-notes.md 
+
+│   ├── testing/ 
+
+│   │   ├── acceptance-scenarios.md 
+
+│   │   ├── agent-evaluation.md 
+
+│   │   ├── README.md 
+
+│   │   ├── tdd-cycle.md 
+
+│   │   └── test-strategy.md 
+
+│   ├── requirements.md 
+
+│   ├── stakeholdres.md 
+
+│   ├── use-cases.md 
+
+│   └── user-stories.md 
+
+├── domain/ 
+
+│   ├── __init__.py 
+
+│   └── models.py 
+
+├── factories/ 
+
+│   ├── __init__.py 
+
+│   └── calendar_factory.py 
+
+├── notes/ 
+
+│   └── week1.md 
+
+├── ports/ 
+
+│   ├── __init__.py 
+
+│   ├── calendar_port.py 
+
+│   ├── memory_store.py 
+
+│   └── study_repository.py 
+
+├── tests/ 
+
+│   ├── __init__.py 
+
+│   ├── test_acceptance_workflows.py 
+
+│   ├── test_calendar_integration.py 
+
+│   ├── test_planning_policy.py 
+
+│   └── test_system_planning.py 
+
+├── .gitignore 
+
+├── __init__.py 
+
+├── agent_memory.json 
+
+├── agent_output.txt 
+
+├── evaluate_agent.py 
+
+├── inspect_database.py 
+
+├── lab_agent.py 
+
+├── README.md 
+
+└── run.py 
 ``` 
  
-## Week 1 - Git Collaboration and AI Agent Fundamentals 
+The tree summarizes the key source and Week 10 deliverables; earlier files in 
+`docs/` and the Week 1 outputs remain in the repository. 
  
-Week 1 introduces Git/GitHub collaboration and a deterministic mini-agent simulator. 
  
-Topics: 
-- repository and commit workflow 
-- task branches 
-- GitHub Issues 
-- Pull Requests 
-- autonomy 
-- tool use 
-- memory 
-- action 
+## Week 2 - Requirements Engineering 
  
-### Run the Week 1 Demo 
+Week 2 adds stakeholder analysis, functional and non-functional requirements, AI-agent boundaries, user stories, acceptance criteria, traceability, and a Mermaid use-case-style model. The artefacts are stored in `docs/`. 
  
-```bash 
-python lab_agent.py 
-``` 
+## Week 3 – UML Structural Modeling 
  
-If your system uses `python3`: 
+Week 3 adds structural models and a small Python domain-model application. Mermaid sources are stored in `docs/models/`, and `app.py` implements the same Student, Assignment, StudyPlan, and PlanItem concepts shown in the diagrams. 
  
-```bash 
-python3 lab_agent.py 
-``` 
+## Week 4 - Behavioral Modeling 
  
-### Week 1 Output Files 
+Week 4 adds an executable planning workflow and three behavioral views of the same use case: an activity-style flowchart, a native Mermaid state machine, and a native Mermaid sequence diagram. The sequence model includes an AI-agent-style component calling a calendar tool and handling both success and failure. 
  
-- `lab_agent.py` - observe/decide/act logic 
-- `agent_memory.json` - persistent memory 
-- `agent_output.txt` - file-system action produced by the agent 
-- `notes/week1.md` - project artefact created/managed by the agent 
+## Week 5 - Software Architecture 
  
-## Development Workflow 
+Week 5 refactors the behavioral prototype into a small modular architecture. The project separates domain concepts, orchestration, planning, external ports, and concrete adapters. Mermaid diagrams document the decomposition and dependency direction. 
  
-The project uses `main` as the stable integrated branch. 
- 
-For each task or laboratory: 
- 
-```text 
-main 
-  -> create a task branch 
-  -> make and review changes 
-  -> git add / git commit 
-  -> git push 
-  -> Pull Request 
-  -> merge into main 
-  -> git switch main 
-  -> git pull 
-``` 
- 
-
-## Week 2 - Requirements Engineering
-
-Week 2 adds stakeholder analysis, functional and non-functional requirements, AI-agent boundaries, user stories, acceptance criteria, traceability, and a Mermaid use-case-style model. The artefacts are stored in `docs/`.
-
-## Application Status
-
-The executable `lab_agent.py` application is unchanged from Week 1. Week 2 changes the specification and project documentation, not the implementation.
-Do not begin a new laboratory from an old task branch. 
- 
-## Current Project Status 
- 
-- Week 1: completed - Git workflow and introductory agent simulator 
-- Week 2: next - requirements engineering and use-case modeling 
- 
-## Course 
- 
-Software Engineering and AI Agent Fundamentals   
-GAINBAN-SZOFMEIN-1
-
-## Week 3 – UML Structural Modeling
-
-Week 3 adds structural models and a small Python domain-model application. Mermaid sources are stored in `docs/models/`, and `app.py` implements the same Student, Assignment, StudyPlan, and PlanItem concepts shown in the diagrams.
-
-## Week 4 Behavioral Modeling
-Week 4 adds an executable planning workflow and three behavioral views of the same use case: an activity-style flowchart, a native Mermaid state machine, and a native Mermaid sequence diagram. The sequence model includes an AI-agent-style component calling a calendar tool and handling both success and failure.
-
-## Week 5 - Software Architecture
-Week 5 refactors the behavioral prototype into a small modular architecture. The project separates domain concepts,
-orchestration, planning, external ports, and concrete adapters. Mermaid diagrams document the decomposition and dependency
-direction.
-
 ## Week 6 - Data Modeling and Persistence 
-
+ 
 Week 6 maps the Study Planning Agent domain model to a normalized relational schema and adds an executable SQLite persistence adapter. Students, assignments, plans and plan items are stored as business data. Planning-request state, memory events and calendar tool calls demonstrate persistence for agent workflows. 
-
-## Week 8 Scrum Planning and Project Governance
-- Planning artifacts: `docs/project-management/README.md` (index plus eight detailed Markdown files)[cite: 125].
-- Scope: Scrum planning and simulated iteration; no new production Python feature in Week 8[cite: 125].
-- Sprint Goal: improve transparency, missing-deadline handling, and shareability[cite: 125].
-- Selected: PB-01 (5 SP), PB-02 (3 SP), PB-03 (5 SP); 13 SP capacity[cite: 125].
-- Final simulated board: 6 Done, 1 In Review, 1 In Progress; PB-03 is unfinished.
-- Existing SQLite application remains the working technical baseline.
-- **Week 8:** completed Scrum sprint planning, Product Backlog, Sprint Board, simulated Daily Scrum, Sprint Review, Retrospective, and XP/TDD overview.
-
-
-## Week 9 SOLID Refactoring and Design Patterns
-Week 9 refactors calendar-provider construction into `factories/calendar_factory.py` and adds tool-call logging through `adapters/logging_calendar.py`. `run.py` selects the configured provider, wraps it with `LoggingCalendarDecorator`, and injects the resulting `CalendarPort` into the existing orchestrator. The domain model, agent goal, and SQLite schema remain unchanged[cite: 81].
-
-Documentation and engineering evidence: [docs/design-patterns/README.md](docs/design-patterns/README.md)[cite: 81].
-
-
+ 
+## Week 8 - Scrum Planning and Project Governance 
+- Planning artefacts: `docs/project-management/README.md` (index plus eight detailed Markdown files). 
+- Scope: Scrum planning and simulated iteration; no new production Python feature in Week 8. 
+- Sprint Goal: improve transparency, missing-deadline handling, and shareability. 
+- Selected: PB-01 (5 SP), PB-02 (3 SP), PB-03 (5 SP); 13 SP capacity. 
+- Final simulated board: 6 Done, 1 In Review, 1 In Progress; PB-03 is unfinished. 
+- Existing SQLite application remains the working technical baseline. 
+ 
+## Week 9 - SOLID Refactoring and Design Patterns 
+  
+Week 9 refactors calendar-provider construction into `factories/calendar_factory.py` and adds tool-call logging through `adapters/logging_calendar.py`. `run.py` selects the configured provider, wraps it with `LoggingCalendarDecorator`, and injects the resulting `CalendarPort` into the existing orchestrator. The domain model, agent goal, and SQLite schema remain unchanged. 
+  
+Documentation and engineering evidence: [`docs/design-patterns/README.md`](docs/design-patterns/README.md). The Week 9 branch is `week9-solid-patterns`; merge it into `main` after verifying success, controlled failure, missing-input, and persistence scenarios. 
+ 
+## Application Status 
+ 
+The current integrated application starts with `python run.py --reset-db`. 
+The original `lab_agent.py` remains as Week 1 historical material; it is not the 
+current main application. The Week 9 Factory and Decorator remain active, 
+and Week 10 adds an injected `PlanningPolicy` without changing SQLite schema. 
+ 
+## Week 10 - Testing, TDD and AI-Agent Evaluation 
+ 
+Week 10 adds a separately tested two-hour planning policy, nine automated tests 
+across four test scopes, acceptance checks for safe failure, and a four-scenario 
+agent-evaluation report. See `docs/testing/README.md`. 
+ 
+Run from the project root: 
+ 
+```powershell 
+python -m unittest discover -s tests -v 
+python evaluate_agent.py 
+python run.py --reset-db 
+``` 
+ 
+ 
 ## Current Project Status 
+ 
 - Week 1: completed - Git workflow and introductory agent simulator 
-
 - Week 2: completed - requirements engineering and use-case modeling 
-
 - Week 3: completed - structural models and Python domain model 
-
 - Week 4: completed - behavioral models and executable agent workflow 
-
 - Week 5: completed - architectural decomposition and interfaces 
-
 - Week 6: completed - conceptual data model, relational design, normalization and SQLite persistence 
-
-- Week 7: next - coding standards, code review, branching and traceability 
+- Week 7: completed - coding standards, code review, branching and traceability 
+- Week 8: completed - Scrum sprint planning, Product Backlog, Sprint Board, simulated Daily Scrum, Sprint Review, Retrospective, and XP/TDD overview 
+- Week 9: completed - SOLID refactoring, Factory/Adapter/Decorator design patterns, and regression verification 
+- Week 10: completed - automated testing, TDD, acceptance checks and agent evaluation 

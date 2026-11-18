@@ -1,0 +1,10 @@
+AGENT EVALUATION REPORT
+SCENARIO -> standard_success: task_success=True, behavior_correct=True, state=Completed, tool=SUCCESS, error=none
+SCENARIO -> short_success: task_success=True, behavior_correct=True, state=Completed, tool=SUCCESS, error=none
+SCENARIO -> missing_input: task_success=False, behavior_correct=True, state=WaitingForInput, tool=NOT_CALLED, error=missing_input
+SCENARIO -> calendar_failure: task_success=False, behavior_correct=True, state=Failed, tool=FAILED, error=tool_failure
+TASK SUCCESS RATE -> 2/4 = 50.0%
+CONTROLLED BEHAVIOR RATE -> 4/4 = 100.0%
+GOAL COMPLETION RELIABILITY -> 2/2 = 100.0%
+ERROR ANALYSIS -> missing_input=1, tool_failure=1, unexpected=0
+TRACE INSPECTION -> final task states and tool-call outcomes matched all four expected scenarios
