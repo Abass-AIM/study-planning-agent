@@ -266,7 +266,15 @@ python evaluate_agent.py
 python run.py --reset-db 
 ``` 
  
- 
+ ## Week 11 - Integrated AI-Agent Roles and Reflection
+Week 11 adds specialized `PlanningAgent` and `ReflectionAgent` roles controlled by `AgentCoordinator` while preserving the tested Week 10 orchestrator, calendar boundary, SQLite persistence and `PlanningPolicy`. Reflection only runs after `Completed`; missing-input and failed requests skip review.
+
+- Python files: `agent/planning_agent.py`, `agent/reflection_agent.py`, `agent/coordinator.py`, `agent/reflection_demo.py`.
+- Tests: `tests/test_reflection_agent.py`, `tests/test_agent_coordination.py`.
+- Documentation: `docs/agent-integration/README.md`.
+- Verification: `python -m unittest discover -s tests -v` (13 passing tests).
+- Runtime: `python run.py --reset-db` and `python inspect_database.py`.
+
 ## Current Project Status 
  
 - Week 1: completed - Git workflow and introductory agent simulator 
@@ -279,3 +287,4 @@ python run.py --reset-db
 - Week 8: completed - Scrum sprint planning, Product Backlog, Sprint Board, simulated Daily Scrum, Sprint Review, Retrospective, and XP/TDD overview 
 - Week 9: completed - SOLID refactoring, Factory/Adapter/Decorator design patterns, and regression verification 
 - Week 10: completed - automated testing, TDD, acceptance checks and agent evaluation 
+- Week 11: completed - planning, reflection, coordination, memory evidence and Mermaid documentation
